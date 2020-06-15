@@ -36,9 +36,9 @@ RUN cp rucio.cfg.template rucio.cfg
 
 WORKDIR /home
 
-RUN echo "export RUCIO_HOME="/home/rucio"" >> ~/.bashrc
-RUN echo "export X509_USER_CERT="/home/rucio/etc/certs/ruciouser.pem"" >> ~/.bashrc
-RUN echo "export X509_USER_KEY="/home/rucio/etc/certs/ruciouser.key.pem"" >> ~/.bashrc
+RUN echo 'export RUCIO_HOME="/home/rucio"' >> ~/.bashrc
+RUN echo 'export X509_USER_CERT="/home/rucio/etc/certs/ruciouser.pem"' >> ~/.bashrc
+RUN echo 'export X509_USER_KEY="/home/rucio/etc/certs/ruciouser.key.pem"' >> ~/.bashrc
 
 COPY 5fca1cb1.0 /etc/grid-security/certificates/5fca1cb1.0
 COPY hostcert.pem /etc/grid-security
