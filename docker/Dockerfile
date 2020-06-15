@@ -9,10 +9,8 @@ RUN yum install -y git \
 vim \
 gcc \
 gcc-c++ \
-kernel-devel \
 make \
 python3 \
-wget \
 python-pip \
 fuse \
 cmake3 \
@@ -24,11 +22,8 @@ gfal2 \
 gfal2-util \
 gfal2-all \
 globus-proxy-utils \
-xrootd-client-devel \
 xrootd-client \
-xrootd-libs-devel \
-xrootd-libs \
-xrootd-server
+xrootd-libs 
 
 WORKDIR  /home
 RUN git clone https://github.com/rucio/fuse-posix.git
